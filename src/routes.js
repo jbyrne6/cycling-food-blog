@@ -24,12 +24,20 @@ import TableList from "views/Tables.js";
 import Maps from "views/Map.js";
 import UserPage from "views/User.js";
 import UpgradeToPro from "views/Upgrade.js";
+import Home from "views/Home.js";
 
 var routes = [
   {
+    path: "/home",
+    name: "Home",
+    icon: "nc-icon nc-bank",
+    component: Home,
+    layout: "/admin",
+  },
+  {
     path: "/dashboard",
     name: "Dashboard",
-    icon: "nc-icon nc-bank",
+    icon: "nc-icon nc-chart-bar-32",
     component: Dashboard,
     layout: "/admin",
   },
